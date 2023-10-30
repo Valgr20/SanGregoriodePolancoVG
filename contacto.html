@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>San Gregorio de Polanco</title>
+
+<link rel="shortcut icon" href="./logooo.png" type="image/x-icon">
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="./estilos2.css">
+
+</head>
+
+<body class="body-contacto">
+
+<!--Barra de navegacion-->
+
+<nav class="navbar navbar-expand-md">
+
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <!--Agregamos un ícono dentro de la navbar-->
+    
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="./logooo.png" width="50" alt="Logo de la pagina web"></a>
+
+
+
+
+        <!--Elementos de texto dentro de la navbar-->
+      
+        <ul class="navbar-nav d-flex justify-content-center align-items-center"> <!--Cuando agregamos estas clases a la navbar: d-flex justify-content-center align-items-center ya estamos centrando todo el contenido-->
+
+         
+          <li class="nav-item mx-1">
+          <a class="nav-link" href="historia.html">Historia</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link" href="turismo.html">Turismo</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link"   href="museo-abierto.html">Museo abierto</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link" href="webgrafia.html">Webgrafía</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section>
+  <h1 class="titulo-contacto mt-5 p-4">Formulario de contacto </h1>
+</section>
+
+
+<!----------------------------------------------------COMIENZA EL FORMULARIO---------------------------------------->
+  
+
+
+    <div class="form-content me-5 mt-5 p-5">
+
+    <form id="contact-form" action="https://formsubmit.co/valg_20@hotmail.com" method="POST">
+
+    <div class="cajita cajita1 p-5">
+
+      <br>
+      <br>
+      <br>
+      
+          <i class="fa-solid fa-user mt-5 ms-4"></i>
+          <label class="nombre mt-4 mb-4" for="name"></label>
+          <input type="text" name="name" id="name" placeholder="Nombre">
+         
+          <br>
+       
+          <i class="fa-solid fa-at mt-5 ms-4"></i>
+          <label class="email mt-4 mb-4" for="email"></label>
+          <input type="email" name="email" id="email" placeholder="Correo electrónico">
+
+          <br>
+
+          <i class="fa-solid fa-message mt-5 ms-4"></i>
+          <label class="coments mt-4 mb-4" for="coments"></label>
+          <input type="coments" name="coments" id="coments" placeholder="Ingrese su comentario">
+
+          <br>
+
+          <button class="btn" name="btn" type="submit" value="Enviar">Enviar</button>
+
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+        
+          <input type="hidden" name="_captcha" value="false">
+
+    </div>
+
+    </form>  
+    
+    
+    <div class="cajita cajita2 ms-5">
+
+      <img class="img-form" src="./gif.gif" alt="">
+    </div>
+
+
+  </div> 
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

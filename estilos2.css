@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Dancing+Script:wght@400;500;600;700&family=Indie+Flower&family=Oswald:wght@200;300;400;500&family=Pacifico&family=Satisfy&family=Shadows+Into+Light&family=Young+Serif&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Young Serif', serif;
+    }
+
+   /** Personalizamos la barra de Navegacion**/
+
+.navbar {
+  background-color: rgb(250, 221, 186);
+}
+
+.navbar-collapse {
+   align-items: center; 
+   justify-content: space-between;
+}
+
+.frase {
+    background-color: rgb(246, 208, 166);
+    padding: 10px;
+}
+
+.section {
+    background-color:rgb(246, 205, 156);
+}
+
+.section2 {
+    background-color: rgb(225, 194, 156);
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-title {
+    text-align: center;
+    color: rgb(7, 40, 152);
+} 
+
+.body {
+    background-color:antiquewhite;
+}
+
+.container {
+background-color:rgb(246, 205, 156);
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.card {
+background-color: antiquewhite;
+border: solid 1px rgb(246, 205, 156);
+transition: all 1s;
+width: 33%;
+}
+
+
+.row-footer {
+    font-size: 25px;
+}
+
+.card-title1 {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+
+@media screen and (max-width:800px) {
+    .historia {
+      columns width:200px;
+    }
+     }
+
+/*GALERÍA DE IMAGENES*/
+@media screen and (max-width:800px){
+    .container-img {
+        width: 95%;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px; 
+    } 
+}
+
+
+/* NAVBAR */
+
+@media screen and (max-width:768px){
+    .navbar-brand {
+        display: none;
+    }
+    }
+
+        
+
+.nav-item:hover {
+    background-color:rgb(246, 208, 166);
+    /* Si no queremos que el borde de los elementos, o el resto de los elementos, se mueva al pasar la flecha por encima, debemos colocar lo siguiente: 
+    border: 5px grey -acá va el mismo color del background- */
+
+    color: rgb(14, 0, 0);
+    border: 2px solid white;
+    font-size: 18px;
+}
+
+.btn:hover {
+  background-color: rgb(55, 178, 196);
+ color: rgb(14, 0, 0);
+    border: 2px solid white;
+    font-size: 18px;
+} 
+
+.container {
+    max-width: 100%;
+}
+
+
+.img:hover {
+    transform: scale(1.1) translateY(-40px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card:hover {
+        transform: translateY(-40px);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+
+/******************************************************************GALERIA DE IMAGENES**************************************************************/
+
+.card-title {
+    font-size: 25px;
+}
+
+
+
+.container-img {
+background-color: antiquewhite;
+  width:100%; 
+  max-width: 1670px;
+  margin: auto;
+  margin-top: 60px; 
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+}
+
+.container-img .box-img figure{
+  width: 100%;
+  height: 100%;  
+}
+
+.container-img .box-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.container-img .box-img:nth-child(1) {
+grid-column-start: span 2;
+}
+
+.container-img .box-img:nth-child(4) {
+ grid-row-start: span 2;   
+} 
+
+
+@media screen and (max-width:700px) {
+.container-img {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 200px;
+}
+
+.container-img .box-img:nth-child(1) {
+    grid-column-start: span;
+}
+
+
+.container-img .box-img:nth-child(2) {
+    grid-column-start: span 2;
+}
+
+
+.container-img .box-img:nth-child(3) {
+    grid-column-start: span 2;
+}
+
+
+
+.container-img .box-img:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+
+.container-img .box-img:nth-child(5) {
+    grid-column-start: span 2;
+}
+
+
+.container-img .box-img:nth-child(6) {
+    grid-column-start: span 2;
+}
+
+
+.container-img .box-img:nth-child(7) {
+    grid-column-start: span 2;
+}
+}
+
+
+
+
+ .body-museo {
+    background-color: antiquewhite;
+ }
+
+ .turismo {
+text-align: justify;
+background-image: url(./c.png);
+width: 100%;
+height:900px;
+ }
+
+ .titulo-turismo {
+    text-align: center;
+ }
+
+.museo-abierto {
+    width:100%;
+    color: rgb(17, 21, 22);
+    text-align: justify;
+}  
+
+.container-img {
+    background-color: antiquewhite;
+}
+
+
+.body-contacto {
+background-color:antiquewhite;
+}
+
+
+.titulo-contacto {
+    background-color: rgb(248, 198, 133);
+    text-align: center;
+}
+
+.section-contacto {
+    background-image: url(./correo\ electronico.mp4);
+}
+
+
+
+
+/*******************************************************************FOOTER************************************************/
+
+.footer {
+    width: 100%;
+    background-color: rgb(245, 188, 118);
+}
+
+
+.logo {
+    width: 60%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text {
+    margin: 20px;
+}
+
+.texto {
+    text-align: justify;
+    background-color: antiquewhite;
+}
+
+.container-historia {
+display: grid;
+width: 100%;
+height: 800px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr;
+grid-template-areas:
+"caja1 caja1 caja2";
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+
+.caja2 {
+    grid-area: caja2;
+}
+
+.diario {
+border:2px solid rgb(220, 156, 35);
+}
+
+.title-historia {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+
+
+.container-footer {
+    display: grid;
+    width: 100%;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "caja1 caja1 caja2 caja2";
+    }
+
+ .caja1 {
+    grid-area: caja1;
+ }   
+
+ .caja2 {
+    grid-area: caja2;
+ }
+
+
+ .form-content {
+    font-size: 20px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "cajita1 cajita2";
+    }
+    
+
+    
+ .cajita1 {
+    width: 100%;
+    grid-area: cajita1;
+    align-items: center;
+    justify-content: center;
+
+ }   
+
+ .cajita2 {
+    width: 100%;
+    grid-area: cajita2;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+ }
+
+ .img-form {
+    width: 500px;
+    height: 500px;
+
+ }
+
+
+ @media screen and (max-width: 600px) {
+
+    .container-footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "caja1"
+    "caja2"; 
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .container-historia {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "caja1"
+    "caja2"; 
+    }
+}
