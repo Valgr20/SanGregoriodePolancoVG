@@ -52,6 +52,10 @@
     background-color:antiquewhite;
 }
 
+.titulo-index {
+    text-align: center;
+}
+
 .container {
 background-color:rgb(246, 205, 156);
 align-items: center;
@@ -397,6 +401,10 @@ border-radius: 10px;
     text-align: center;
 }
 
+
+.list-group {
+    text-align: justify;
+}
 
 @media screen and (max-width: 900px) {
     .container-historia {
