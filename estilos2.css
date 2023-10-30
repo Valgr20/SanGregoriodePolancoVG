@@ -48,7 +48,7 @@
     color: rgb(7, 40, 152);
 } 
 
-.body {
+.body-index {
     background-color:antiquewhite;
 }
 
@@ -277,12 +277,7 @@ background-color:antiquewhite;
 }
 
 
-.logo {
-    width: 60%;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .card-text {
     margin: 20px;
@@ -313,6 +308,7 @@ grid-template-areas:
 
 .diario {
 border:2px solid rgb(220, 156, 35);
+border-radius: 10px;
 }
 
 .title-historia {
@@ -375,8 +371,84 @@ border:2px solid rgb(220, 156, 35);
 
  }
 
+ .body-historia {
+    background-color: antiquewhite;
+ }
+
+.logo {
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-index {
+  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo-museo 
+{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container-historia {
+    background-color: antiquewhite;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "caja1"
+    "caja2"; 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+        width: 200px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+ 
+
+ .turismo {
+
+    text-align: justify;
+    background-image: url(./c.png);
+    width: 100%;
+    height:1100px;
+    background-color: antiquewhite;
+    color:antiquewhite;
+    
+     }
+}
 
  @media screen and (max-width: 600px) {
+
+    .form-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "cajita1"
+    "cajita2"; 
+    }
+
+    .cajita1 {
+    
+        gap: 400px;
+        width: 100%;
+
+
+
+    }
+}
+
+@media screen and (max-width: 600px) {
 
     .container-footer {
     grid-template-columns: 1fr;
@@ -387,13 +459,3 @@ border:2px solid rgb(220, 156, 35);
     }
 }
 
-
-@media screen and (max-width: 600px) {
-    .container-historia {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-    "caja1"
-    "caja2"; 
-    }
-}
