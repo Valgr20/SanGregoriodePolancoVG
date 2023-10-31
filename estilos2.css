@@ -413,6 +413,11 @@ border-radius: 10px;
     text-align: justify;
 }
 
+.body-turismo {
+    background-color: antiquewhite;
+}
+
+
 @media screen and (max-width: 900px) {
     .container-historia {
     background-color: antiquewhite;
