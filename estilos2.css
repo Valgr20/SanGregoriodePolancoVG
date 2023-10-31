@@ -257,7 +257,15 @@ height:900px;
 
 
 .body-contacto {
-background-color:antiquewhite;
+
+/*background-color:antiquewhite;*/
+background-image: url(email2.png);
+background-repeat:no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+
+
 }
 
 
@@ -269,9 +277,6 @@ background-color:antiquewhite;
     align-items: center;
 }
 
-.section-contacto {
-    background-image: url(./correo\ electronico.mp4);
-}
 
 
 
@@ -344,15 +349,17 @@ border-radius: 10px;
  }
 
 
- .form-content {
-    font-size: 20px;
-    display: grid;
-    height: 500px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "cajita1 cajita2";
-    }
+
+
+ .section-form {
+    
+   width: 100%;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   min-height: 90vh;
+ }
     
 
     
